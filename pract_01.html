@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Formularios 2 en HTML 5 -Tecsup</title>
+        <link rel="stylesheet" href="css/style.css">
+        <div id=contener>
+    </head>
+    <body>
+ <!-- AARON -->
+        <form name="formregistro" accion="procesar.php" method="post" method="post" size="10">
+            <br>
+            <table border="0">
+            <tr>
+                <td class="centradoAzul" colspan="4">Travel Authorization From</td>
+            </tr>
+            </table>
+            <br>
+            <label class=subtit colspan="4">Sección A: Informacion del cliente</label>
+            <hr>
+
+            <table border="0">
+            <tr>
+                <td>cargo:</td>
+                <td><input type="text" minlength="4" maxlength="100" style="text-transform:uppercase" name="cargo" id="carg" ></td>
+            </tr>
+            
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" minlength="4" maxlength="100" style="text-transform:uppercase" name="Nombre" id="nom" ></td>
+            </tr>
+
+            <tr>
+                <td>Primer Apellido:</td>
+                <td><input type="text" minlength="4" maxlength="100" style="text-transform:uppercase" name="Apellido" id="apell" ></td>
+            </tr>
+
+            <tr>
+                <td>Segundo Apellido:</td>
+                <td><input type="text" minlength="4" maxlength="100" style="text-transform:uppercase" name="Apellido" id="Apellido"></td>
+            </tr>
+
+            <tr>
+                <td>Correo Electronico:</td>
+                <td><input type="email" name="correo electronico"></td>
+            </tr>
+
+            <tr>
+                <td>Numero de Telefono:</td>
+                <td><input type="tel" name="phone" maxlength="9" >
+                </td>
+
+            </tr>
+            </table>   
+                <br>          
+                    <label class=subtit >Sección B: Informacion del cliente</label>
+                <hr>
+                <table border="0">
+                <tr>
+                    <td>Nombre de la aerolinea:</td>
+                    <td><select name="cboaerolinea" >
+                        <option value="0">Seleccione una aerolinea</option>
+                        <option value="1">SKY</option>
+                        <option value="2">Latam Airlines</option>
+                        <option value="3">Avianca</option>
+                        <option value="4">Viva</option>
+                    </select></td>
+                    <td colspan="2">gastos adicionales estimados</td>
+                </tr>
+                
+                <tr>
+                    <td>destino</td>
+                    <td><input type="text" size="21.5" name="nombre" required ></td>
+                    <td>Alquiler de coche</td>
+                    <td><input type="number" id="tentacles" name="tentacles"
+                        min="100" max="600" step="1" maxlength="3"size="9.7"></td>
+                </tr>
+    
+                <tr>
+                    <td>Fecha de Salida:</td>
+                    <td><input type="date" id="start" name="trip-start" min="2020-01-01"></td>
+                    <td>Hotel:</td>
+                    <td><input size="9.7"></td>
+                </tr>
+    
+                <tr>
+                    <td>Fecha de Regreso:</td>
+                    <td><input type="date" id="start" name="trip-start" min="2020-01-01"></td>
+                    <td>Comidas:</td>
+                    <td><input type="number" id="tentacles" name="tentacles"
+                        min="001" max="1000000" step="1" maxlength="10" size="7"></td>
+                </tr>
+    
+                <tr>
+                    <td>coste estimado:</td>
+                    <td><input type="number" id="tentacles" name="tentacles"
+                        min="100" max="1000" step="1" maxlength="4" size="15"></td>
+                    <td>Total estimado:</td>
+                    <td><input size="9.7" placeholder="0,00€"></td>
+                </tr>
+
+                <table border="1">
+                    <tr>
+                        <td>¿Incluye la visita al cliente?</td>
+                        <td><input type="checkbox" name="Incluye" value=""></td>
+
+                        <td >Metodos de pago utilizado:
+                            <BR/>
+                            <input  size="45" type="radio" name="espacio" value="Metálico"/>Metálico<BR/>
+                            <input  type="radio" name="espacio" value="Tarjeta"/>Tarjeta de crédito<BR/>
+                            <input  type="radio" name="espacio" value="Cheque"/>Cheque<BR/>
+                        </td>
+                    </tr>
+                </table>
+                <p id="caja">
+                    <label for="caja">Proposito del viaje:</label><br/>
+                </p>
+                <table>
+                    <textarea  id="caja" name="caja"></textarea>
+                </table>
+                <BR/>
+                <button class="boton">Enviar</button>
+                <BR/>
+        </form>
+    </body>
+</html>

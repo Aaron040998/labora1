@@ -1,0 +1,48 @@
+.centradoAzul{
+    border:1px solid black;
+    font-family: arial;
+    color:white;
+    font-size: 30px;
+    text-align:center;
+    background-color:#3397FF;
+    height: 20px;
+    width: 50% ;
+}
+.boton{
+    background-color:#3397FF;
+    color:white;
+    padding: 07px 15px;
+    font-size: 17px;
+    border:0.5px solid black;
+
+}
+.subtit{
+    font-family: arial;
+    font-weight: bold;
+    color:#3397FF;
+}
+
+#contener{
+    border:1px solid black;
+    width:650px;
+    height:710px;
+    margin:10px;
+    text-align: normal;
+}
+
+form{
+    margin: 0 auto;
+    width: 600px;
+}
+
+textarea{
+    padding: 20px 150px;
+    margin-left: 110px;
+    border: 1px solid;
+        height:20px;
+        width: 180px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+}
+
+
